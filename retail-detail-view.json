@@ -1,5 +1,5 @@
 {
-  "schema": "<a href="https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json" target="_blank">https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json</a>",
+  "schema": "<a href='https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json' target='_blank'>https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json</a>",
   "debugMode": false,
   "hideSelection": true,
   "hideColumnHeader": true,
@@ -28,7 +28,7 @@
           {
             "elmType": "button",
             "attributes": {
-              "class": "ms-fontSize-xl ms-fontColor-themePrimary"
+              "class": "ms-fontColor-themePrimary"
             },
             "style": {
               "border": "0",
@@ -38,6 +38,7 @@
               "cursor": "pointer",
               "line-height": "1.5em",
               "overflow": "hidden",
+              "font-size": "21px",
               "text-align": "left"
             },
             "customRowAction": {
@@ -47,17 +48,15 @@
           },
           {
             "elmType": "div",
-            "attributes": {
-              "class": "ms-fontSize-mPlus"
-            },
             "style": {
+              "font-size": "15px",
               "line-height": "1.5em"
             },
             "children": [
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontWeight-bold"
+                "style": {
+                  "font-weight": "700"
                 },
                 "txtContent": "Goal: "
               },
@@ -69,17 +68,15 @@
           },
           {
             "elmType": "div",
-            "attributes": {
-              "class": "ms-fontSize-mPlus"
-            },
             "style": {
+              "font-size": "15px",
               "line-height": "1.5em"
             },
             "children": [
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontWeight-bold"
+                "style": {
+                  "font-weight": "700"
                 },
                 "txtContent": "Start Date: "
               },
@@ -89,15 +86,15 @@
               },
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontWeight-bold"
+                "style": {
+                  "font-weight": "700"
                 },
                 "txtContent": "  ||  "
               },
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontWeight-bold"
+                "style": {
+                  "font-weight": "700"
                 },
                 "txtContent": "Due Date: "
               },
@@ -132,20 +129,18 @@
             "children": [
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
-                },
                 "style": {
+                  "font-size":"15px",
+                  "font-weight": "700",
                   "line-height": "2em"
                 },
                 "txtContent": "Last Activities"
               },
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontSize-s ms-fontWeight-light"
-                },
                 "style": {
+                  "font-size": "12px",
+                  "font-weight": "100",
                   "display": "inline-block",
                   "line-height": "1em",
                   "vertical-align": "top",
@@ -169,20 +164,18 @@
             "children": [
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
-                },
                 "style": {
+                  "font-size":"15px",
+                  "font-weight":"700",
                   "line-height": "2em"
                 },
                 "txtContent": "Next Activities"
               },
               {
                 "elmType": "span",
-                "attributes": {
-                  "class": "ms-fontSize-s ms-fontWeight-light"
-                },
                 "style": {
+                  "font-size":"12px",
+                  "font-weight":"100",
                   "display": "inline-block",
                   "line-height": "1em",
                   "vertical-align": "top",
@@ -208,10 +201,9 @@
             "children": [
               {
                 "elmType": "div",
-                "attributes": {
-                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
-                },
                 "style": {
+                  "font-size":"15px",
+                  "font-weight":"700",
                   "line-height": "0.5em"
                 },
                 "txtContent": "Status"
