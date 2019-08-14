@@ -1,0 +1,236 @@
+{
+  "schema": "<a href="https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json" target="_blank">https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json</a>",
+  "debugMode": false,
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": " ms-borderColor-neutralLight"
+    },
+    "style": {
+      "border-top-width": "1px",
+      "border-top-style": "solid",
+      "width": "100%",
+      "padding": "0 0 0 20px",
+      "flex-wrap": "wrap",
+      "align-items": "flex-start",
+      "justify-content": "space-between"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "1 0 300px",
+          "margin": "10px"
+        },
+        "children": [
+          {
+            "elmType": "button",
+            "attributes": {
+              "class": "ms-fontSize-xl ms-fontColor-themePrimary"
+            },
+            "style": {
+              "border": "0",
+              "padding": "0",
+              "margin-bottom": "0.5em",
+              "background-color": "transparent",
+              "cursor": "pointer",
+              "line-height": "1.5em",
+              "overflow": "hidden",
+              "text-align": "left"
+            },
+            "customRowAction": {
+              "action": "defaultClick"
+            },
+            "txtContent": "[$Title]"
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "ms-fontSize-mPlus"
+            },
+            "style": {
+              "line-height": "1.5em"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontWeight-bold"
+                },
+                "txtContent": "Goal: "
+              },
+              {
+                "elmType": "span",
+                "txtContent": "[$Goal]"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "ms-fontSize-mPlus"
+            },
+            "style": {
+              "line-height": "1.5em"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontWeight-bold"
+                },
+                "txtContent": "Start Date: "
+              },
+              {
+                "elmType": "span",
+                "txtContent": "=toLocaleDateString[$StartDate]"
+              },
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontWeight-bold"
+                },
+                "txtContent": "  ||  "
+              },
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontWeight-bold"
+                },
+                "txtContent": "Due Date: "
+              },
+              {
+                "elmType": "span",
+                "txtContent": "=toLocaleDateString[$Due_x0020_Date]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "0 0 539px",
+          "width": "504px",
+          "margin": "10px",
+          "display": "flex",
+          "justify-content": "space-between"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "ms-bgColor-neutralLighter"
+            },
+            "style": {
+              "flex": "0 0 180px",
+              "height": "108px",
+              "text-align": "center"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
+                },
+                "style": {
+                  "line-height": "2em"
+                },
+                "txtContent": "Last Activities"
+              },
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontSize-s ms-fontWeight-light"
+                },
+                "style": {
+                  "display": "inline-block",
+                  "line-height": "1em",
+                  "vertical-align": "top",
+                  "text-align": "justify",
+                  "margin": "5px"
+                },
+                "txtContent": "[$LastActivities]"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "ms-bgColor-neutralLighter"
+            },
+            "style": {
+              "flex": "0 0 173px",
+              "height": "108px",
+              "text-align": "center"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
+                },
+                "style": {
+                  "line-height": "2em"
+                },
+                "txtContent": "Next Activities"
+              },
+              {
+                "elmType": "span",
+                "attributes": {
+                  "class": "ms-fontSize-s ms-fontWeight-light"
+                },
+                "style": {
+                  "display": "inline-block",
+                  "line-height": "1em",
+                  "vertical-align": "top",
+                  "text-align": "justify",
+                  "margin": "5px"
+                },
+                "txtContent": "[$NextActivities]"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "=if([$Status] == 'Red', 'ms-bgColor-red', if([$Status] == 'Green', 'ms-bgColor-green', if([$Status] == 'Amber', 'ms-bgColor-yellow', if([$Status] == 'On Hold', 'ms-bgColor-teal', ''))))"
+            },
+            "style": {
+              "flex": "0 0 173px",
+              "height": "108px",
+              "box-sizing": "border-box",
+              "padding": "12px 10px",
+              "text-align": "center"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": " ms-fontSize-mPlus ms-fontWeight-bold"
+                },
+                "style": {
+                  "line-height": "0.5em"
+                },
+                "txtContent": "Status"
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "color": "#fff",
+                  "font-size": "70px",
+                  "line-height": "1em"
+                },
+                "attributes": {
+                  "iconName": "=if([$Status] == 'Red', 'StatusCircleErrorX', if([$Status] == 'Green', 'CheckMark', if([$Status] == 'Amber', 'StatusCircleExclamation', if([$Status] == 'On Hold', 'Remove', ''))))"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
